@@ -7,6 +7,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-polyglot
+  - jekyll-remote-theme
 
-languages: ["en", "fr",]
+sass:
+  style: compressed
+  sass_dir: _sass
+
+exclude:
+  - favicon.ico
