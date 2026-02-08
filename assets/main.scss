@@ -198,6 +198,20 @@ blockquote {
   letter-spacing: 0.5px;
 }
 
+// Images & Videos
+img, video {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
 // Responsive
 @media screen and (max-width: 600px) {
   h1 { font-size: 26px; }
