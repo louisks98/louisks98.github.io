@@ -1,0 +1,208 @@
+---
+---
+
+@import "minima";
+
+// Letterboxd-inspired Color Palette
+$bg-primary: #14181c;
+$bg-secondary: #1b2028;
+$bg-card: #242c34;
+$bg-hover: #2c3440;
+$green: #00e054;
+$green-dark: #00c030;
+$blue: #40bcf4;
+$orange: #ee7000;
+$text-primary: #d8e0e8;
+$text-secondary: #9ab;
+$text-muted: #678;
+$border: #303840;
+
+// Base
+body {
+  background: $bg-primary;
+  color: $text-primary;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+// Header
+.site-header {
+  background: #0d1014;
+  border-top: none;
+  border-bottom: 1px solid $border;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 20px !important;
+  color: $text-primary !important;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+}
+
+// Navigation
+.site-nav {
+  .page-link {
+    color: $text-secondary;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+// Content
+.page-content {
+  padding: 40px 0;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+
+p {
+  color: $text-primary;
+  margin-bottom: 1.3em;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: lighten($blue, 12%);
+  }
+}
+
+// Code
+pre, code {
+  background: $bg-secondary;
+  border: 1px solid $border;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 13px;
+}
+
+code {
+  color: $green;
+  padding: 2px 6px;
+}
+
+pre {
+  padding: 16px;
+  overflow-x: auto;
+
+  code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: $text-primary;
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 3px solid $green;
+  background: rgba(0, 224, 84, 0.05);
+  padding: 14px 20px;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+  color: $text-secondary;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Post list
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    margin-bottom: 0;
+    padding: 20px 0;
+    background: transparent;
+    border-bottom: 1px solid $border;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: $bg-secondary;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.post-link {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff !important;
+  letter-spacing: -0.2px;
+
+  &:hover {
+    color: $blue !important;
+  }
+}
+
+.post-meta {
+  color: $text-muted;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+// Footer
+.site-footer {
+  background: #0d1014;
+  border-top: 1px solid $border;
+  color: $text-muted;
+  padding: 28px 0;
+
+  a {
+    color: $text-muted;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.footer-heading {
+  color: $text-secondary;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// Responsive
+@media screen and (max-width: 600px) {
+  h1 { font-size: 26px; }
+
+  .post-link {
+    font-size: 17px;
+  }
+}
